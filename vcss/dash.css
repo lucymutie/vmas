@@ -1,0 +1,284 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    color:aliceblue;
+}
+.vmaheader{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size: cover;
+    background: bisque;
+
+}
+.navdash{
+    position: relative;
+    padding:8px 10px;
+    width: 100%;
+    display: flex;
+    box-shadow: 0 0 20px #000;
+    align-items: space-around;
+    justify-content: space-between;
+    background:rgb(7, 68, 83) ;
+}
+.img img{
+    position: relative;
+    font-weight: bold;
+    height: 35px;
+    width: 35px;
+    cursor: pointer;
+}
+.img1 strong{
+    position: relative;
+    font-weight: bold;
+    font-size:2em;
+    cursor: pointer;
+
+}
+.img1 p{
+    position: relative;
+    left: 17.3em;
+    top:-1.6em;
+    z-index: 5;
+    cursor: pointer;
+    background:transparent;
+    display:none;
+}
+.img1 .inputs input{
+    position:relative;
+    padding:8px 10px;
+    border-radius: 19px;
+    outline: none;
+    background:transparent;
+    color:rgb(187, 223, 255);
+    font-size: 15px;
+    width:300px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.inputs{
+    display:none;
+}
+.img3 img{
+    position: relative;
+    font-weight: bold;
+    height: 35px;
+    width: 35px;
+    cursor: pointer;
+}
+
+.leftbar{
+    position: relative;
+    display: block;
+    height: 100vh;
+    width: 300px;
+    background:rgb(7, 68, 83);
+    box-shadow: inset 0 0 20px -4px #ccc;
+    display: none;
+    z-index: 1;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.leftbar li a {
+    display: block;
+    color: rgb(235, 220, 220);
+    padding: 20px 10px 16px;
+    text-decoration: none;
+    position: relative;
+    text-align: center;
+    top:3em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+.leftbar li a.active {
+    background-color: #2a6fc9;
+    color: white;
+}
+
+.leftbar li a:hover:not(.active) {
+    background-color: rgba(255,255,255,0.1);
+    color: white;
+}
+.close{
+    position: relative;
+    float:right;
+    left: -1em;
+    top: 1em;
+    cursor: pointer;
+}
+#hr{
+    position: relative;
+    top:1.8em;
+    color:#444;
+    width: 100%;
+}
+.close img{
+    height: 20px;
+    width: 20px;
+}
+.logoacc{
+    position: relative;
+    display: flex;
+}
+.logoacc .pic{
+    border-radius: 10px;
+    background:rgba(48, 44, 44, 0.473);
+    position: relative;
+    height: 70px;
+    width: 100px;
+    left:1.2em;
+    float: right;
+    top: 3em;
+    cursor: pointer;
+}
+.pic input{
+    height: 80px;
+    width: 120px;
+    background:#fdfdfd;
+    position:relative;
+    border-radius: 10px;
+}
+#file{
+    position: relative;
+}
+.dev{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background:#182024;
+    z-index: 1;
+    display:none;
+}
+.upper{
+    position:relative;
+    text-align:center;
+    padding:10px 10px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-bottom: 10px solid #000;
+    display:flex;
+    align-content: space-around;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.tab{
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    align-content: center;
+}
+.tab a{
+    text-decoration:none;
+    font-size:18px;
+    padding:20px 10px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.tab a.active{
+    color:rgb(235, 95, 95);
+    border-radius: 10px;
+}
+.app{
+    position:relative;
+    height:80%;
+    width:100%;
+    background-color:rgba(58, 48, 48, 0.322);
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    align-content: center;
+    padding:20px 20px;
+    padding-left: 20px;
+}
+.app #tar1{
+    display: none;
+    position: relative;
+    background: rgba(4, 18, 56, 0.815);
+    height:100%;
+    width:100%;
+    box-shadow:inset 0 0 20px -5px #2a6fc9;
+}
+.app #tar2{
+    display: none;
+    position: relative;
+    background: rgb(116, 102, 97);
+    height:100%;
+    width:100%;
+    box-shadow: inset 0 0 20px -5px #2a6fc9;
+}
+.app #tar3{
+    display: none;
+    position: relative;
+    background: rgb(83, 35, 18);
+    height:100%;
+    width:100%;
+    box-shadow: inset 0 0 20px -5px #2a6fc9;
+}
+.app #tar4{
+    display: none;
+    position: relative;
+    background: coral;
+    height:100%;
+    width:100%;
+    box-shadow: inset 0 0 20px -5px #2a6fc9;
+}
+
+.footer{
+    position: fixed;
+    left: 0;
+    bottom:0;
+    height: 30px;
+    width: 100%;
+    background:rgb(7, 68, 83);
+    display: flex;
+    padding:30px 10px;
+    box-shadow: 0 0 20px -5px #fdfdfd;
+}
+.footernav{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: space-evenly;
+}
+.imgV img{
+    height:70px;
+    width:90px;
+    cursor: pointer;
+}
+/* .imgV img{
+    height:50px;
+    width:50px;
+    position: relative;
+} */
+
+/* img */
+
+#photo{
+    height: 100%;
+    width: 100%;
+}
+
+#file{
+    display: none;
+}
+
+#uploadBtn{
+    height: 40px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    background: rgba(0, 0, 0, 0.7);
+    color: wheat;
+    line-height: 30px;
+    font-family: sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+    display: none;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title  %>  </title>
+    <link rel="stylesheet" href="../vcss/signup.css">
+    <link rel="shortcut icon" href="../vfav/fav.ico" type="image/x-icon">
+</head>
+<body>
+    <div id="vlmbox">
+        <div id="loginform">
+        </div>
+        <div id="main">
+            <label for="signup"><h1 style="position: relative; left: 5px;">Signup</h1></label>
+            <form action="/vma@signup" method="POST" enctype="application/x-www-form-urlencoded" autocomplete="off">
+            <div id="errors">error</div>
+            <input type="text" name="name" id="first" placeholder="Enter your name ...">
+            <br>
+            <input type="text" name="sname" id="last" placeholder="Enter your lastname ...">
+            <br>
+            <input type="text" name="email" id="email" placeholder="Enter your email ...">
+            <br>
+            <input type="number" placeholder="Phonenumber ..." name="phone" id="phone">
+            <br>
+            <input type="password" name="password" id="password" placeholder="Enter your password ...">
+            <br>
+            <input type="password"  id="password1" placeholder="Confirm your password ...">
+            <br>
+            <div id="div">
+                <a href="/vma@login">I have an account ?</a>
+                <br>
+                <button class="tip-button" id="btnsign" >
+                    <span class="tip-button__text">Submit</span>
+                    <div class="coin-wrapper">
+                      <div class="coin">
+                        <div class="coin__middle"></div>
+                        <div class="coin__back"></div>
+                        <div class="coin__front"></div>
+                      </div>
+                    </div>
+                  </button>
+            </div>
+        </div>
+            </form>
+    </div>
+
+    <script src="../vjs/signup.js"></script>
+    </body>
+    </html>
+ 

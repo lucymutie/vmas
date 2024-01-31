@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title  %> </title>
+    <link rel="stylesheet" href="../vcss/signup.css">
+    <link rel="shortcut icon" href="../vfav/main.ico" type="image/x-icon">
+</head>
+<body>
+    <div id="vlmbox">
+        <div id="loginform"></div>
+        <div id="main" style=" height: 430px;">
+            <label for="login"><h1 style="position: relative; left: 5px;">Login</h1></label>
+            <form style="position: relative; top:6em;" action="/vma@login" enctype="application/x-www-form-urlencoded" method="POST">
+                <div id="errors"></div>
+            <input type="text" name="username" id="username" placeholder="Enter your username ...">
+            <br>
+            <input type="password" name="password" id="password" placeholder="Enter your password ...">
+            <br>
+            <div id="div" style="position: relative; top: 7em;">
+                <a href="/vma@signup" style="position: relative; left:-5em ;">Don't have an account</a>
+                <br>
+                <button class="tip-button" id="btnlogin">
+                    <span class="tip-button__text">Submit</span>
+                    <div class="coin-wrapper">
+                      <div class="coin">
+                        <div class="coin__middle"></div>
+                        <div class="coin__back"></div>
+                        <div class="coin__front"></div>
+                      </div>
+                    </div>
+                  </button>
+            </div>
+            
+        </div>
+            </form>
+        </div>
+
+        <script src="../vjs/login.js"></script>
+    </body>
+    </html>
+
